@@ -1,0 +1,132 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap');
+
+:root {
+    --main-color: #ff5f02;
+    --text-color: #696969;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Testimonials Section */
+.testimonials{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .container{
+    max-width: 300px;
+}
+
+.testimonials .card{
+    width: 300px;
+    padding: 3rem;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.testimonials .card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-color);
+    z-index: -1;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.testimonials .card .image{
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    background-color: var(--main-color);
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimonials .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    border: 3px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimonials .card .media-icons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials .card .media-icons i{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.testimonials .card .name-profession{
+    text-align: center;
+}
+
+.testimonials .card .name-profession .name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.testimonials .card .name-profession .profession{
+    color: #696969;
+}
+
+.testimonials .card .rating{
+    color: var(--main-color);
+}
